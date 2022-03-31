@@ -1,0 +1,9 @@
+name: AndriyCraftv5
+version: 0.0.2
+main: andriy333kin.Main
+
+commands:
+   hub:
+      description: Hub command
+      usage: hub
+      aliases: [lobby, spawn]
