@@ -6,8 +6,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin implements Listener {
     @Override
-    public void onDisable() {
-    }
+    public void onDisable() {}
 
     @Override
     public void onEnable() {
