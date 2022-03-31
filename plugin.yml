@@ -6,4 +6,4 @@ commands:
    hub:
       description: Hub command
       usage: hub
-      aliases: [lobby, back, spawn]
+      aliases: [lobby, spawn]
