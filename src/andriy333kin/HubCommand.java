@@ -7,11 +7,13 @@ import org.bukkit.command.CommandSender;
 import net.md_5.bungee.api.ChatColor;
 
 public class HubCommand implements CommandExecutor {
+
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-		sender.sendMessage(ChatColor.YELLOW + "Щоб вернутися в нормальне лоббі використовуйте /fhub");
-		sender.sendMessage(ChatColor.YELLOW + "If you want to teleport to normal lobby use /fhub");
+		sender.sendMessage(ChatColor.GOLD + "РЇРєС‰Рѕ РІРё С…РѕС‡РµС‚Рµ РІРµСЂРЅСѓС‚РёСЃСЏ РІ РЅРѕСЂРјР°Р»СЊРЅРµ Р»РѕР±Р±С– РІРёРєРѕСЂРёСЃС‚РѕРІСѓР№С‚Рµ /fhub");
+		sender.sendMessage(ChatColor.GOLD + "If you want to teleport to normal lobby use /fhub");
 		Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "mw move " + sender.getName() + " duels_lobby1");
 		return true;
 	}
+
 }
