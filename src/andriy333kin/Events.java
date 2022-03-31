@@ -17,13 +17,14 @@ import org.bukkit.event.server.TabCompleteEvent;
 import org.bukkit.event.weather.LightningStrikeEvent;
 import org.bukkit.event.weather.WeatherChangeEvent;
 import net.md_5.bungee.api.ChatColor;
+
 @SuppressWarnings("deprecation")
 
 public class Events implements Listener {
 
     @EventHandler
     public void onjoin(PlayerJoinEvent event) {
-    	event.getPlayer().sendMessage(ChatColor.YELLOW + "Ви зараз граєте в дуелі на AndriyCraft");
+    	event.getPlayer().sendMessage(ChatColor.GOLD + "Р’Рё Р·Р°СЂР°Р· РіСЂР°С”С‚Рµ РІ РґСѓРµР»С– РЅР° AndriyCraft");
     	event.setJoinMessage(ChatColor.GREEN + "+ " + ChatColor.GOLD + event.getPlayer().getDisplayName());
     	Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "mw move " + event.getPlayer().getDisplayName() + " duels_lobby1");
     } 
